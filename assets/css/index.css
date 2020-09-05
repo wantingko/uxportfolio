@@ -1,0 +1,262 @@
+html, body{
+    scroll-behavior: smooth;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+}
+
+h1{
+    font-size: 25px;
+    /*line-height: 1;*/
+    padding-top: 10px;
+    text-align: center;
+    color: #385266;
+}
+
+h2{
+    font-size: 16px;
+    /*line-height: 1.5;*/
+    padding: 3px;
+    text-align: center;
+    color: #385266;
+    font-weight: 400;
+    /*margin: 10px;*/
+}
+
+h3{
+    color: #717171;
+    font-size: 13px;
+    padding: 3px;
+    text-align: center;
+    font-weight: 400;
+    /*margin: 10px;*/
+}
+
+p{
+    padding: 3px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+header{
+    margin-top: 1em;
+    height: 30vh;
+}
+
+.header-title{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    color: #385266;
+}
+
+.header-des{
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 5px;
+    text-align: center;
+    color: #385266;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.header-edu{
+    color: #717171;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+/* navbar */
+nav{
+    /*position: fixed;*/
+    padding: 20px;
+    text-align: center;
+}
+
+li{
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+a{
+    color: rgba(56, 82, 102, 0.6);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+li a.active{
+    padding: 5px;
+    color: #385266;
+    border-bottom: 3px solid #EB3D42;
+}
+
+a:hover{
+    color: #385266;
+}
+
+/* skip */
+*:focus{
+    border: 2px solid blcak;
+}
+
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -100px;
+}
+
+.skip a:focus{
+    top: 0;
+}
+
+/*tags remember to update the styles*/
+.tag-groups{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.tag-item{
+    color: #0F2749;
+    cursor:pointer;
+    min-width: 120px;
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px;
+    transition: .1s linear;
+}
+
+.tag-item.active{
+    background: #3F75FD;
+    color: #FFFFFF;
+}
+
+#uxd:hover, #uxd.active{
+    background: #28C3D3;
+    color: #FFFFFF;
+}
+
+#uxr:hover, #uxr.active{
+    background: #F6D839;
+    color: #FFFFFF;
+}
+
+#dev:hover, #dev.active{
+    background: #FF7373;
+    color: #FFFFFF;
+}
+
+/*project*/
+/*.project-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+}*/
+
+.project-content{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    padding-bottom: 10px;
+    margin: 2.5em;
+}
+
+.card {
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+  /*max-width: 470px;*/
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.card > img{
+    border-radius: 6px;
+}
+
+.price {
+  color: grey;
+  font-size: 16px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+/*---------------------------------------------------*/
+
+/*media queries*/
+/* media query for laptops and desktops*/
+/* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+@media all and (min-width: 1025px){
+    nav{
+        text-align: right;
+    }
+    header{
+        padding: 4em; 
+    }
+    .projects{
+        padding: 4em;
+    }
+}
+
+/* media query for tablets and ipads - portrait*/
+/* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; 
+    }
+    .skip a{
+      -webkit-transition: none;
+      transition: none;
+    }
+    .intro-image{
+        animation: none;
+    }
+  }
