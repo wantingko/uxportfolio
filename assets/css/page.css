@@ -1,0 +1,73 @@
+h1{
+    font-size: 25px;
+    /*line-height: 1;*/
+    padding: 23px 10px 20px 3px;
+    text-align: left;
+    color: #385266;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 16px;
+    /*line-height: 1.5;*/
+    padding: 3px;
+    text-align: center;
+    color: #385266;
+    font-weight: 400;
+    /*margin: 10px;*/
+    line-height: 1.5;
+    text-align: left;
+}
+
+h3{
+    color: #717171;
+    font-size: 13px;
+    padding: 3px;
+    text-align: center;
+    font-weight: 400;
+    /*margin: 10px;*/
+}
+
+p{
+    padding: 3px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.section {
+	margin-bottom: 2em;
+	padding: 0 25%;
+}
+
+/* Create three equal columns that floats next to each other */
+.row {
+	margin-bottom: 20px;
+	padding: 0 25%;	
+}
+
+.column {
+  float: left;
+  width: 25%;
+  /*padding: 15px;*/
+}
+
+.column > p{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+

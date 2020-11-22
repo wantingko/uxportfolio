@@ -2,27 +2,27 @@ html, body{
     scroll-behavior: smooth;
     font-size: 1em;
     margin: 0;
-    padding: 0;
+    padding: .3em;
     font-family: 'Karla', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
     height: 100%;
 }
 
 h1{
     font-size: 25px;
     /*line-height: 1;*/
-    padding-top: 10px;
+    padding: 10px;
     text-align: center;
     color: #385266;
 }
 
 h2{
-    font-size: 16px;
-    /*line-height: 1.5;*/
+    font-size: 20px;
     padding: 3px;
     text-align: center;
     color: #385266;
     font-weight: 400;
-    /*margin: 10px;*/
+    line-height: 1.5;
 }
 
 h3{
@@ -141,6 +141,7 @@ a:hover{
     color: #0F2749;
     cursor:pointer;
     min-width: 120px;
+    /*min-width: 100px;*/
     padding: 8px 20px;
     display: flex;
     align-items: center;
@@ -173,16 +174,6 @@ a:hover{
 }
 
 /*project*/
-/*.project-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding: 10px;
-}*/
-
 .project-content{
     display: grid;
     grid-gap: 20px;
@@ -201,6 +192,7 @@ a:hover{
 
 .card > img{
     border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .price {
@@ -224,6 +216,111 @@ a:hover{
   opacity: 0.7;
 }
 
+/*testing*/
+
+.project-tags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.project-tag{
+    font-size: 13px;
+    padding: 3px 8px;
+    background: #E3EAFF;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-top: .5em;
+    color: #2E3658;
+}
+
+/*remember to edit this part*/
+footer {
+  position: relative;
+  width: 100%;
+  color: #777;
+  padding-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-bottom: 40px;
+  font-size: 16px;
+  margin-top: 70px;
+}
+
+.icon{
+  padding: 5px;
+}
+
+.copyright{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/*remember to edit footer elements*/
+
+/*all projects starts here*/
+.hero-image {
+  background-color: #FFFFFF;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*.img-gif > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 300px;
+}*/
+
+.section{
+  padding: 10px 5%;
+}
+
+.section > img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/*testing paring image and text*/
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*background-color: #0f2749;*/
+}
+
+.flex-reverse{
+  flex-direction: row-reverse;
+}
+
+.flex-container > div {
+  /*background-color: #f1f1f1;*/
+  /*flex: 0 0 50%;*/
+  /*max-width: 50%;*/
+  /*max-width: 450px;*/
+  /*margin: 0px 0px;*/
+  padding: 10px 0;
+  /*font-size: 1em;*/
+  /*color: white;*/
+}
+
+/*change project*/
+/*syncgrading project*/
+/*maize and blue project*/
+/*music database project*/
 
 /*---------------------------------------------------*/
 
