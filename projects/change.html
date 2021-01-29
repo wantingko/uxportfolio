@@ -22,24 +22,30 @@
     <nav>
       <div class="nav-links">
         <ul>
-          <li class="nav-item"><a class="active" href="index.html">PORTFOLIO</a></li>
+          <li class="nav-item"><a class="active" href="../index.html">PORTFOLIO</a></li>
           <!-- <li class="nav-item"><a href="playground.html">PLAYGROUND</a></li> -->
           <li class="nav-item"><a href="../about.html">ABOUT</a></li>
-          <li class="nav-item"><a href="../assets/pdf/wantingko-resume.pdf">RESUME</a></li>
+          <li class="nav-item"><a target="_blank" href="../assets/pdf/wantingko-resume.pdf">RESUME</a></li>
         </ul>
       </div>
      </nav>
 
 <!-- project starts here -->
-<!--   <div class="hero-image" style="background-image: url('https://s3.us-east-2.amazonaws.com/yuhsuanlin/VTT/p1.png')"></div> -->
-
-<div class="hero-image" style="background-color: #f1f1f1; padding: 20px; text-align: center;">
-  <h1>Header placeholder</h1>
-</div>
-
-  <div class="section">
+<!-- <div class="landing-grid">
+  <div class="landing-text">
     <h1>CHANGE</h1>
-    <p>A mobile application that helps people build sustainable habits through gamified experiences.</p>
+    <h2>A mobile app that assists people in building a more sustainable lifestyle.</h2>
+  </div>
+  <div class="hero-image" style="background-color: #76ccd1; padding: 20px; text-align: center;">
+    <h1>{{ landing image placeholder :)}}</h1>
+  </div>
+</div> -->
+
+<!-- 1. overview -->
+  <div class="section">
+    <div class="landing-title">CHANGE</div>
+    <div class="landing-description">A mobile application that helps people build sustainable habits through gamified experiences.</div>
+    <img src="../assets/img/change-landing.png">
     <p>People care about the environment and are eager to contribute by building an eco-friendly lifestyle. However, developing sustainable habits alone is never easy. From 10 in-depth interviews with potential users, we found people feel helpless, lonely, and unmotivated in this journey. Thus, we would like to present a mobile app idea that gamifies traditional habit-forming experiences. Our solution, CHANGE, offers structured steps with tips to help users achieve personal goals, visualizes their achievements in journey maps, and motivates them through team challenges that bring in communities to support them along the way.</p>
 
   </div>
@@ -52,7 +58,8 @@
           
           <div class="column">
             <h2>Type</h2>
-            <p>Side project, submitted to CHI 2020</p>
+            <p>Side project</p>
+            <p>submitted to CHI 2020</p>
           </div>
           
           <div class="column">
@@ -63,35 +70,40 @@
 
           <div class="column">
             <h2>My role</h2>
-            <p>UX Researcher</p>
+            <p>Researcher</p>
             <p>Designer</p>
           </div>
+          
       </div>
   
-
+<!-- 2. problem -->
   <div class="section">
+      <h4>{{ project tag }}</h4>
       <h1>Problem</h1>
       <p>Nowadays, people have become more aware of the need to live a sustainable life. They have been bringing glass containers to work, using tumblers for morning coffee, and taking public transportation to avoid driving. However, developing sustainable habits alone is never an easy task. We found from 10 interviews that people often feel helpless, lonely, and unmotivated during the process. In this study, we present a mobile app CHANGE that gamifies habit-forming experience. CHANGE provides structured steps with informative tips to help users achieve personal goals, visualizes their achievements in journey maps, and motivates them through team challenges that bring in communities to support users through their journeys.</p>
-  </div>
+      <hr>
+    </div>
 
-
+<!-- 3. solution -->
+  <div>
   <div class="section">
-
+    <h4>{{ project tag }}</h4>
     <h1>Solution</h1>
 
     <div class="flex-container">
       <div>
         <h2>Local map: connect local users to form a community</h2>
         <p>With CHANGE, we build a local map to help users to connect to other users, so as to create a sense of belonging. Also, from our user research, we know that users are greatly influenced by the environment and the community, so we try to build this app with a map that can help users to find nearby like-minded people who are also interested in cultivating sustainable habits.</p></div>
-      <div><img src="../assets/img/change-community.gif" style="max-width: 200px"></div>
+      <div class="gif-image"><img src="../assets/img/change-community.gif" style="max-width: 300px"></div>
     </div>
 
     <div class="flex-container flex-reverse">
+    <!-- <div class="flex-container"> -->
       <div>
         <h2>Personal challenge: rewards and reflection to internalize sustainable habits</h2>
         <p>Apart from group challenges, we also create the section for solo-challenge-takers. In personal challenges, we focus on reflection through self-rating and assessment. Also, to incentivize users, we provide small real-ward rewards to motivate them so that they know their reflection with CHANGE is greatly connected to their daily life.</p></div>
       <div>
-        <img src="../assets/img/change-personal-challenge.gif" alt="" style="max-width: 200px">
+        <img src="../assets/img/change-personal-challenge.gif" alt="" style="max-width: 300px">
       </div>
     </div>
 
@@ -101,18 +113,22 @@
         <p>To increase the sense of community, we want to elevate the process of forming sustainable habits to a crowdsourcing game to not only motivate users to contribute to sustainable actions but also make them feel a sense of honor.</p></div>
       
       <div>
-        <img src="../assets/img/change-group-challenge.gif" alt="" style="max-width: 200px">
+        <img src="../assets/img/change-group-challenge.gif" alt="" style="max-width: 300px">
       </div>
     </div>
-
+    <hr>
   </div>
 
-  <div class="section">
+  <!-- 4. design process -->
+  <!-- <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>Design Process</h1>
     <img src="../assets/img/change-process.png">
-  </div>
+  </div> -->
 
+  <!-- 5. research -->
   <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>Research</h1>
     <h2>In-depth Interviews</h2>
     <p>To have a deeper understanding of people’s thoughts on sustainability and their current lifestyles, we interviewed 10 people that represented different stages of life, academic focuses, and cultural backgrounds. The interviewees include 1 Korean, 1 Chinese, 3 Taiwanese, and 5 Americans. All interviewees are between 20-50 years old and are currently living in the USA.</p> 
@@ -124,31 +140,40 @@
     <h2>Affinity Wall</h2>
     <p>After conducting the interviews, we collected insights gathered from the interviewees and created affinity notes on yellow digital post-its during interpretation sessions. To further analyze the qualitative data, we applied the KJ Method. We first clustered post-it notes with similar concepts to larger groups and gave each of them a red post-it with a short summary of the group. We repeated this process several times to build up an affinity wall. </p>
     <img src="../assets/img/change-affinity.png">
+    <hr>
   </div>
 
+  <!-- 6. finidings -->
   <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>Findings</h1>
     <p>The affinity wall unfolds the following three deciding factors that have a significant influence on people’s behaviors when they are trying to pursue a more sustainable lifestyle.</p>
     <img src="../assets/img/change-findings.png">
+    <hr>
   </div>
 
+  <!-- 7. ideation -->
   <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>Ideation</h1>
     <p>
       Considering that our interviewees are mostly in their 20s and 30s, we decided to narrow down the target users of our product to college students and young professionals for they have more control over making decisions on their preferable lifestyles. According to our findings, we set up the following goals that we want our game design to fulfill:  
     </p>
     <ul>
-      <li>- Design an intriguing and enlightening experience of habit formation</li>
-      <li>- Create a virtual community that motivates users to build sustainable habits together</li>
-      <li>- Develop systematic plans that introduce users ways to lead a more environmentally friendly lifestyle</li>
+      <li>• Design an intriguing and enlightening experience of habit formation</li>
+      <li>• Create a virtual community that motivates users to build sustainable habits together</li>
+      <li>• Develop systematic plans that introduce users ways to lead a more environmentally friendly lifestyle</li>
     </ul>
     <p>Having the above goals in mind, we brainstormed and did quick sketches to showcase our ideas. From the 15 solutions we came up with, we picked the ones that represent the highest level of entertainment, have the most potential in assisting users to build sustainable habits effectively, and provide platforms to connect users to support each other.</p>
     <img src="../assets/img/change-sketch-1.png">
     <img src="../assets/img/change-sketch-2.png">
     <img src="../assets/img/change-group-brainstorm.png">
+    <hr>
   </div>
 
+  <!-- 8. iterations -->
   <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>Design</h1>
     <h2>Wireframes</h2>
     <img src="../assets/img/change-wireframe.png">
@@ -157,15 +182,15 @@
     <p>In the stage of constructing wireframes, we created several versions of each interaction. During online meetings, we gave each other feedback and did initial user tests to see which versions our users think would be more intuitive.</p> 
     <P>From the design critiques I provided by my team and feedback received from micro-usability tests, I modified the display of group challenges and decided to merge personal and group challenges.</p>
 
-    <h3>Design decision 1: Hover to view a group challenge or view all as a list</h3>
+    <h4>Design decision 1: Hover to view a group challenge or view all as a list</h3>
     <img src="../assets/img/change-design-changes-1.png">
     <P>Displaying all challenge cards makes user more thrilled by the popularity of people practicing sustainable habits together. However, if there are more than 4-5 group challenges on users’ screens at the same time, it would be challenging to even see the map that lies in the background. As a compromise, all group challenge location icons stay while the cards show only when users hover over or click on the icons.</P>
 
-    <h3>Design decision 2: Limit information displayed in Map View and show the entire information later</h3>
+    <h4>Design decision 2: Limit information displayed in Map View and show the entire information later</h3>
     <img src="../assets/img/change-design-changes-2.png">
     <p>Since the size of each challenge card is limited due to the size of the screens, I decided to show partial information such as title of the challenges only. Additionally, because we hope that this mobile application can not only help people build sustainable habits, but also educate them, I proposed to add a short paragraph about concepts behind each act and show progress bars as an incentive to encourage users to contribute in group challenges. </p>
 
-    <h3>Design decision 3: Merging personal and group challenges</h3>
+    <h4>Design decision 3: Merging personal and group challenges</h3>
     <img src="../assets/img/change-design-changes-3.png">
     <p>Now that simplified group challenge cards display only when users click on the location icons, the Map page looks a lot cleaner. Thus, after discussing with Hsin-Yu, we agreed to merge personal accomplishment and group challenge icons together so that users do not have to jump between different Map pages.</p>
 
@@ -173,9 +198,12 @@
     <p>Finally, we merged the two main features “Journey,” and “Map.” The work was then submitted to the CHI 2020 Game Competition in early January. We hope that after conducting several rounds of usability tests and iterating the features accordingly, CHANGE would eventually become a more mature product that invites people to build sustainable habits and together make the world a better place to live for future generations.</p>
 
     <p>Final design that includes CHANGE’s two main features “Journey” and “Map”</p>
+    <hr>
   </div>
 
+  <!-- 9. conclusion and future notes -->
   <div class="section">
+    <h4>{{ project tag }}</h4>
     <h1>What I learned</h1>
     <h2>Go to users to get insights</h2>
     <p>During the design process, I created a number of different wireframes. None of those is perfect enough to match all criteria in the QOC analysis. Yet, going to potential users and ask for their feedback or even watch how they interact with each version was very helpful. This made the decision making process easier with a more solid ground.</p>

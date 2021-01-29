@@ -2,18 +2,20 @@ html, body{
     scroll-behavior: smooth;
     font-size: 1em;
     margin: 0;
-    padding: .3em;
+    /* padding: .3em; */
     font-family: 'Karla', sans-serif;
     /*font-family: 'Source Sans Pro', sans-serif;*/
     height: 100%;
 }
 
 h1{
-    font-size: 25px;
+    font-size: 1.2rem;
     /*line-height: 1;*/
     padding: 10px;
+    /* margin: 1em 0 0 0; */
     text-align: center;
     color: #385266;
+    /* color: #646464; */
 }
 
 h2{
@@ -31,18 +33,32 @@ h3{
     padding: 3px;
     text-align: center;
     font-weight: 400;
-    /*margin: 10px;*/
+    margin: 10px;
+}
+
+h4 {
+    color: #c0ccd4;
+    font-size: 20px;
+    padding: 3px 0;
+    font-weight: 700;
+    margin: 50px 0 0 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+
 }
 
 p{
     padding: 3px;
     margin-bottom: 5px;
     line-height: 1.5;
+    font-size: 16px;
+    color: #55585a;
 }
 
 header{
-    margin-top: 1em;
     height: 30vh;
+    background-color: #fff8cd;
+    margin-bottom: 40px;
 }
 
 .header-title{
@@ -72,24 +88,28 @@ header{
     margin: 10px;
 }
 
-.main{
+/* #main{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70vh;
-}
+    background-color: #eaf2f3;
+} */
 
 /* navbar */
 nav{
     /*position: fixed;*/
     padding: 20px;
     text-align: center;
+    background-color: #fff8cd;
 }
 
 li{
     margin: 10px;
     padding: 5px;
     display: inline-block;
+    font-weight: 700;
+    color: #55585a;
 }
 
 a{
@@ -101,11 +121,15 @@ a{
 li a.active{
     padding: 5px;
     color: #385266;
-    border-bottom: 3px solid #EB3D42;
+    border-bottom: 3px solid #ff9642;
 }
 
 a:hover{
     color: #385266;
+}
+
+img{
+    border-radius: 6px;
 }
 
 /* skip */
@@ -177,9 +201,9 @@ a:hover{
 .project-content{
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    padding-bottom: 10px;
-    margin: 2.5em;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    padding: 0 8%;
+    margin: 2.5em 0;
 }
 
 .card {
@@ -190,30 +214,14 @@ a:hover{
   text-align: center;
 }
 
-.card > img{
+.card > a > img{
     border-radius: 6px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.price {
-  color: grey;
-  font-size: 16px;
-}
-
-.card button {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
+.card > img{
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*testing*/
@@ -240,8 +248,9 @@ a:hover{
 footer {
   position: relative;
   width: 100%;
-  color: #777;
-  padding-bottom: 40px;
+  color: #385266;
+  background-color: #fff8cd;
+  padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
   -webkit-align-items: center;
@@ -249,9 +258,9 @@ footer {
   text-align: center;
   -webkit-justify-content: center;
   justify-content: center;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
   font-size: 16px;
-  margin-top: 70px;
+  /* margin-top: 70px; */
 }
 
 .icon{
@@ -260,15 +269,15 @@ footer {
 
 .copyright{
   width: 100%;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 /*remember to edit footer elements*/
 
 /*all projects starts here*/
 .hero-image {
-  background-color: #FFFFFF;
-  height: 500px;
+  /* background-color: #eaf2f3; */
+  /* height: 500px; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,17 +297,20 @@ footer {
 
 .section > img{
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
+  margin: 30px auto auto auto;
 }
 
 /*testing paring image and text*/
 
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
+  align-items: center;
+
+  /* test */
+  /* padding: 10px 5%; */
   /*background-color: #0f2749;*/
 }
 
@@ -309,10 +321,10 @@ footer {
 .flex-container > div {
   /*background-color: #f1f1f1;*/
   /*flex: 0 0 50%;*/
-  /*max-width: 50%;*/
-  /*max-width: 450px;*/
+  /* max-width: 50%; */
+  /* max-width: 450px; */
   /*margin: 0px 0px;*/
-  padding: 10px 0;
+  padding: 10px 10px 10px 0;
   /*font-size: 1em;*/
   /*color: white;*/
 }
@@ -341,9 +353,77 @@ footer {
 
 /* media query for tablets and ipads - portrait*/
 /* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
 
-}
+} */
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+/* small screens */
+@media screen and (max-width:670px) {
+    header {
+        height: 30%;
+        margin-bottom: 35px;
+    }
+    
+    .header-edu {
+        color: #717171;
+        font-size: 15px;
+        padding: 5px 5px 20px 5px;
+        text-align: center;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    .project-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 0 8%;
+        margin: 2.5em 0;
+    }
+    .column {
+      width: 100%;
+    }
+    .flex-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+    }
+    .section {
+      padding: 0 8%;
+    }
+  }
+  
+  /* medium (641px to 1007px) */
+  @media (min-width: 670px) and (max-width: 1024px) {
+    header {
+        height: 30%;
+    }
+    .header-edu {
+        padding: 5px 5px 15px 5px;
+    }
+    .project-content {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        padding: 0 8%;
+        margin: 2.5em 0;
+    }
+    .flex-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      height: 100%;
+    }
+    .section {
+      padding: 0 10%;
+    }
+  }
 
 @media screen and (prefers-reduced-motion: reduce){
     html{

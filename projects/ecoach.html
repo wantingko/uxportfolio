@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECoach</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="../assets/css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/page.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <div class = "skip">
+    <a href="#main">Skip to Main Content</a>
+    </div>
+
+    <nav>
+      <div class="nav-links">
+        <ul>
+          <li class="nav-item"><a class="active" href="../index.html">PORTFOLIO</a></li>
+          <!-- <li class="nav-item"><a href="playground.html">PLAYGROUND</a></li> -->
+          <li class="nav-item"><a href="../about.html">ABOUT</a></li>
+          <li class="nav-item"><a target="_blank" href="../assets/pdf/wantingko-resume.pdf">RESUME</a></li>
+        </ul>
+      </div>
+     </nav>
+
+<!-- project starts here -->
+<div class="landing-grid">
+  <div class="landing-text">
+    <h1>ECoach</h1>
+    <h2>Improving user experience for a tailored communication system that creates personalized educational experiences.</h2>
+  </div>
+  <div class="hero-image">
+    <img src="../assets/img/ecoach-landing-trans.png" style="width:100%">
+  </div>
+</div>
+
+<!-- 1. overview -->
+  <div class="section">
+    <div class="landing-title">ECoach</div>
+    <div class="landing-description">Improving user experience for a tailored communication system that creates personalized educational experiences.</div>
+    <img src="../assets/img/ecoach-landing.png">
+    <p>ECoach is an educational message tailoring system that strives to create highly personalized learning experiences for students in large classes. According to Professor Tim McKay, the founder of ECoach, providing “the right information, at the right time, and in the right way to his students” is what he envisioned.</p>
+    <p>Since Summer 2020, I have been working on the project team as a User Experience Design Fellow. During that time, I redesigned several aspects of the system to improve user experience.</p>
+  </div>
+
+  <div class="row">
+          <div class="column">
+            <h2>Duration</h2>
+            <p>Aug. 2020 - Jan. 2021</p>
+          </div>
+          
+          <div class="column">
+            <h2>Type</h2>
+            <p>Internship</p>
+          </div>
+          
+          <div class="column">
+            <h2>Team</h2>
+            <p>Project director, UX designer, behavioral scientists, content creator</p>
+            <p>Joseph Henrichs</p>
+          </div>
+
+          <div class="column">
+            <h2>My role</h2>
+            <p>UX Design Fellow</p>
+          </div>
+          
+      </div>
+  
+<!-- 2. problem -->
+  <div class="section">
+      <h4>PROBLEMS</h4>
+      <h1>Problem</h1>
+      <div class="proj-content-card-container">
+        <div class="proj-content-card">
+          <h1>1.</h1>
+          <p>Users take more steps than needed to login and get to their destinations</p>
+        </div>
+        <div class="proj-content-card">
+          <h1>2.</h1>
+          <p>Tags used in tables are not easy to perceive and do not provide details</p>
+        </div>
+        <div class="proj-content-card">
+          <h1>3.</h1>
+          <p>Empty state message can be improved to better engage users</p>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+<!-- 3. solution -->
+  <div>
+    
+  <div class="section">
+    <h4>{{ project tag }}</h4>
+    <h1>Solution</h1>
+
+    <div class="block-container">
+      <h2>Task 1</h2>
+      <p>Improving login flows</p>
+      <p>Design goal: Less clicks and a more straightforward login experience</p>
+    </div>
+    <p>Before the new login flows were implemented, all users, including superusers, institutional managers, coach managers, coach assistants, and students went through unnecessary clicks to reach the page where they visit frequently. To ease the burden, I investigated different permission levels and collected user behavior information to come up with recommended login flows that more efficiently bring users to their destinations.</p>
+    <img src="../assets/img/ecoach-login-superusers.png" alt="ECoach login flow before and after" style="width:100%">
+    <div class="img-des">ECoach Superuser login flow before and after</div>
+    <img src="../assets/img/ecoach-login-dchange.png" alt="ECoach login design change" style="width:100%">
+    <div class="img-des">ECoach login design change</div>
+    <img src="../assets/img/ecoach-login-new-flow.png" alt="ECoach new login flow" style="width:100%">
+    <div class="img-des">ECoach new login flow</div>
+    
+    <div class="block-container">
+      <h2>Task 2</h2>
+      <p>Redesigning characteristics and featured tags</p>
+      <p>Design goal: User friendly UI that self-explains states of table items</p>
+    </div>
+    <p>ECoach allows admin users to tailor messages, assignments, exam playbooks, and surveys. However, feature tags and characteristic tags were not intuitive due to both styling and naming. To solve this, I created multiple icons and tried out different color groups and decided to go with the design that uses the megaphone icon to highlight featured items, and color-coded bars to display wired/partially wired/unwired status. When users hover over each row, they would get more information about what characteristics are wired to MTS and what are not.</p>
+    <img src="../assets/img/ecoach-tag-before.png" alt="ECoach tags before" style="width:100%">
+    <div class="img-des">ECoach tags (before)</div>
+    <img src="../assets/img/ecoach-tags-after.png" alt="ECoach tags after" style="width:100%">
+    <div class="img-des">ECoach tags (after)</div>
+
+    <div class="block-container">
+      <h2>Task 3</h2>
+      <p>Creating empty state of coaches</p>
+      <p>Design goal: Intuitive and informative empty state illustration and copy</p>
+    </div>
+    <p>Previous empty state of coaches was text-based, telling users that we are sorry for they are not in any coaches at the moment. This conveyed the right information, but was not ideal. The word “sorry” carries multiple meanings and could be misinterpreted. Visually, the message was straightforward but cold. Thus, in the redesign, I added illustrations matched with ECoach branding and adjusted the copy and overall layout of the empty state to make the message stand out more.</p>
+    <img src="../assets/img/ecoach-empty-before.png" alt="ECoach empty state (before)" style="width:68%">
+    <div class="img-des">ECoach empty state (before)</div>
+    <img src="../assets/img/ecoach-empty-after.png" alt="ECoach empty state (after)" style="width:100%">
+    <div class="img-des">ECoach empty state (after)</div>
+    <img src="../assets/img/ecoach-empty-iteration.png" alt="ECoach empty iterations" style="width:100%">
+    <div class="img-des">ECoach empty state iterations</div>
+    
+    <hr>
+  </div>
+
+  <!-- 9. conclusion and future notes -->
+  <div class="section">
+    <h4>reflection</h4>
+    <h1>Things I’d Like to Keep in Mind</h1>
+    <p>ECoach is a massive system having five permission levels and various tailoring methods. I started off the tasks underestimating efforts needed before I could even begin to brainstorm, ideate, and design. There were times when I felt like one of the blind men with the elephant. I thought I understood what a great login experience should look like, but I failed to consider all levels of permission. I assumed it would be a simple solution to apply two new icons to replace the feature tag and characteristic tag, but overlooked how complicated the tables were already. Thanks to my mentor, Kristen’s guidance, I was able to get a thorough understanding of how the complex system works. And that helped me make better design decisions.</p>
+  </div>
+
+<!-- project ends here -->
+
+     </div>
+  </main>
+
+  <footer>
+    <div class="copyright">Copyright 2020 Wan-Ting Ko</div>
+    <div class="connect">
+      <a class="icon" href="mailto:wtko@umich.edu"><img src="../assets/icons/email-icon.png" alt="email" style="max-width:25px"></a>
+      <a class="icon" href=""><img src="../assets/icons/github-icon.png" alt="" style="max-width:25px"></a>
+      <a class="icon" href=""><img src="../assets/icons/linkedin-icon.png" alt="" style="max-width:25px"></a>
+    </div>
+  </footer>
+  
+</body>
+</html>
