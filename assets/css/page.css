@@ -1,6 +1,5 @@
 h1{
     font-size: 25px;
-    /*line-height: 1;*/
     padding: 23px 10px 20px 3px;
     text-align: left;
     color: #385266;
@@ -81,7 +80,6 @@ hr {
   padding: 3px;
   text-align: center;
   color: #8f3b76;
-  /* color: #697b88; */
   font-weight: 700;
   line-height: 1.5;
 }
@@ -91,7 +89,6 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 0 5%;	
-  background-color: #eaf2f3;
   align-items: center;
 }
 
@@ -113,6 +110,7 @@ hr {
   justify-content: center;
 }
 
+/* overview */
 .overview-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -172,13 +170,6 @@ hr {
 }
 .block-container > p {
   text-align: center;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 .gif-image {
