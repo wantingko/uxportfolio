@@ -19,6 +19,10 @@ h2{
     text-align: left;
 }
 
+.overview-text > h2 {
+  margin: 0;
+}
+
 h3{
     color: #717171;
     font-size: 18px;
@@ -81,8 +85,32 @@ hr {
   background-color: #eaf2f3;
 }
 
+#spire {
+  background-color: rgba(231, 245, 253, 0.5);
+}
+
+#ecoach {
+  background-color: rgba(159, 217, 218, 0.2);
+}
+
 .landing-text {
   /* height: 500px; */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  position: relative;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0 5%;	
+  /* background-color: #eaf2f3; */
+}
+.overview-text {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -176,6 +204,12 @@ hr {
     flex-direction: column;
     margin: 0 auto;
     width: 90%;
+  }
+  .overview-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    /* width: 90%; */
   }
   .column {
     width: 100%;
