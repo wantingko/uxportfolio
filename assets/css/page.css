@@ -58,12 +58,21 @@ hr {
 
 /* landing */
 .landing-title {
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
-  padding: 40px 10px 20px 3px;
-  text-align: center;
-  color: #385266;
   text-transform: uppercase;
+}
+
+#change-title {
+  color: #1f306e;
+}
+
+#ecoach-title {
+  color: #0f2849
+}
+
+#spire-title {
+  color: #0e0e51
 }
 
 .landing-description {
@@ -71,7 +80,8 @@ hr {
   line-height: 1.5;
   padding: 3px;
   text-align: center;
-  color: #697b88;
+  color: #8f3b76;
+  /* color: #697b88; */
   font-weight: 700;
   line-height: 1.5;
 }
@@ -81,8 +91,8 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 0 5%;	
-  /* padding-bottom: 10px; */
   background-color: #eaf2f3;
+  align-items: center;
 }
 
 #spire {
@@ -93,11 +103,11 @@ hr {
   background-color: rgba(159, 217, 218, 0.2);
 }
 
+#change {
+  background-color: rgba(38, 51, 109, 0.1);
+}
+
 .landing-text {
-  /* height: 500px; */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   position: relative;
   padding: 20px 0;
   justify-content: center;
@@ -108,7 +118,6 @@ hr {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   padding: 0 5%;	
-  /* background-color: #eaf2f3; */
 }
 .overview-text {
   background-position: center;
@@ -123,22 +132,10 @@ hr {
 	padding: 0 20%;
 }
 
-/* Create three equal columns that floats next to each other */
-.row {
-	margin-bottom: 20px;
-	padding: 0 20%;	
-}
-
-.column {
-  float: left;
-  width: 25%;
-  /*padding: 15px;*/
-}
-
-.column > p{
-    text-align: left;
-    margin: 0;
-    padding: 0;
+.four-column-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
 }
 
 /* project content cards */
@@ -211,6 +208,16 @@ hr {
     margin: 0 auto;
     /* width: 90%; */
   }
+  .four-column-grid {
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 20%; */
+  }
+
+  #four-column-grid-title {
+    margin-top: 5px;
+  }
+
   .column {
     width: 100%;
   }
