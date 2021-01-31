@@ -11,7 +11,7 @@ html, body{
 h1{
     font-size: 1.2rem;
     /*line-height: 1;*/
-    padding: 10px;
+    padding: 15px 0 10px 0;
     /* margin: 1em 0 0 0; */
     text-align: center;
     color: #385266;
@@ -34,21 +34,10 @@ h3{
     text-align: center;
     font-weight: 400;
     margin: 10px;
-}
-
-h4 {
-    color: #c0ccd4;
-    font-size: 20px;
-    padding: 3px;
-    font-weight: 700;
-    margin: 50px 0 0 0;
     line-height: 1.5;
-    text-transform: uppercase;
-
 }
 
 p{
-    padding: 3px;
     margin-bottom: 5px;
     line-height: 1.5;
     font-size: 16px;
@@ -107,9 +96,13 @@ nav{
 li{
     margin: 10px;
     padding: 5px;
+    color: #55585a;
+    font-size: 18px;
+}
+
+.nav-item {
     display: inline-block;
     font-weight: 700;
-    color: #55585a;
 }
 
 a{

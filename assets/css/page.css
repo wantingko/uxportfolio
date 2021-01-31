@@ -1,20 +1,16 @@
 h1{
     font-size: 25px;
-    padding: 23px 10px 20px 3px;
+    /* padding: 23px 10px 20px 3px; */
+    padding: 3px 0px 20px 3px;
     text-align: left;
-    color: #385266;
     text-transform: uppercase;
 }
 
 h2{
-    font-size: 20px;
-    line-height: 1.5;
-    padding: 3px;
-    text-align: center;
+    font-size: 23px;  
     color: #697b88;
     font-weight: 700;
-    margin: 40px 0 0 0;
-    line-height: 1.5;
+    margin: 10px 0 0 0;
     text-align: left;
 }
 
@@ -23,21 +19,36 @@ h2{
 }
 
 h3{
-    color: #717171;
-    font-size: 18px;
+    font-size: 20px;
     padding: 3px 0;
     margin: 10px 0;
     text-align: left;
-    font-weight: 400;
-    line-height: 1.5;
+    font-weight: 700;
+}
+
+h4 {
+  color: #c0ccd4;
+  font-size: 19px;
+  padding: 3px;
+  font-weight: 400;
+  /* margin: 50px 0 0 0; */
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.content-tag {
+  color: #c0ccd4;
+  font-size: 19px;
+  padding: 3px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 
 p{
     font-size: 18px;  
     padding: 3px;
-    margin-bottom: 5px;
     line-height: 1.8;
-    color: #55585a;
 }
 
 .img-des {
@@ -51,7 +62,7 @@ p{
 hr {
   display: block;
   height: 1px;
-  border-top: 2px solid #d8e0e4;
+  border-top: 2px solid rgba(216, 224, 228, 0.3);
   margin: 3em 0
 }
 
@@ -74,7 +85,11 @@ hr {
   color: #0e0e51
 }
 
-.landing-description {
+.landing-text > h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* .landing-description {
   font-size: 20px;
   line-height: 1.5;
   padding: 3px;
@@ -82,7 +97,7 @@ hr {
   color: #8f3b76;
   font-weight: 700;
   line-height: 1.5;
-}
+} */
 
 .landing-grid {
   display: grid;
@@ -90,6 +105,7 @@ hr {
   grid-gap: 20px;
   padding: 0 5%;	
   align-items: center;
+  margin-bottom: 50px;
 }
 
 #spire {
@@ -101,7 +117,7 @@ hr {
 }
 
 #change {
-  background-color: rgba(38, 51, 109, 0.1);
+  background-color: rgba(38, 51, 109, 0.05);
 }
 
 .landing-text {
@@ -161,7 +177,8 @@ hr {
   position: relative;
   background-color: rgba(160, 217, 218, 0.3);
   width: 100%;
-  padding: 10px;
+  margin-bottom: 12px;
+  padding-top: 5px;
 }
 
 .block-container > h2 {
@@ -190,9 +207,16 @@ hr {
   .landing-grid {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin-bottom: 30px;
     width: 90%;
   }
+  .landing-title {
+    text-align: center;
+  }
+  .landing-text > h2 {
+    text-align: center;
+  }
+
   .overview-grid {
     display: flex;
     flex-direction: column;
