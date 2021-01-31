@@ -102,6 +102,8 @@
     <p>Before the new login flows were implemented, all users, including superusers, institutional managers, coach managers, coach assistants, and students went through unnecessary clicks to reach the page where they visit frequently. </p>
 
     <h2>User pain points</h2>
+    <img src="../assets/img/ecoach-login-before.png" alt="ECoach login flow before" style="width:90%">
+    <div class="img-des">ECoach institution level user login flow (before)</div>
       <ul>
         <li>Previous flow brought users back and forth between admin and student views</li>
         <li>Login flows do not have a consistent style for admin or student users</li>
@@ -113,25 +115,27 @@
       <h3>1. Merged previous ECoach Message and Edit Personal Information page and redesigned new Edit Personal Information page</h3>
         <p>*Affected all levels of users</p>
         <p>Because the ECoach Message page did not provide much information or action options, I recommended merging the page with the Edit Personal Information page for all levels of users. To make sure verbal and visual messages were tailored to all users, I redesigned separate new Edit Personal Information pages with styles carried from the dashboard view and student views. I also rewrote the copy for different groups of users. </p>
+        <img src="../assets/img/ecoach-login-change-1.png" alt="ECoach login change 1" style="width:90%">
+        <div class="img-des">Merged and redesigned Edit Personal Info page</div>
 
       <h3>2. Brought Institution and Coach Level Dashboard views upfront</h3>
         <p>* Affected institution and coach level users</p>
         <p>Institution and coach level users visit the dashboard often. However, the previous flow brought them to student views first and eventually arrived at the dashboard view after 5-6 additional clicks. Therefore, I suggested moving dashboard views right after the new Edit Personal Information page so that institution and coach level users can start their work faster.</p>
+        <img src="../assets/img/ecoach-login-change-2.png" alt="ECoach login change 2" style="width:90%">
+        <div class="img-des">Moved Dashboard views upfront for institution and coach level users</div>
 
       <h3>3. Removed Landing page and Choose ECoach Institution page</h3>
       <p>*Affected all levels of users</p>
       <p>Since Landing Page Login and Landing Page have almost the same content except for a “Let’s go” button, I decided to remove the latter. Moving institution level dashboard upfront allows institution level users to choose institutions from the dropdown menu immediately after Edit Personal Info page. Thus, having a separate page listing out all available institutions to browse was no longer necessary. </p>
+      <img src="../assets/img/ecoach-login-change-3.png" alt="ECoach login change 3" style="width:90%">
+      <div class="img-des">Removed Landing and Choose Institution pages</div>
 
     <h2>Final design: New user flow for all users</h2>
     <p>After the final version of the new user flow redesign was approved by my mentor, I presented the idea to our project director and the change was made available to all users.</p>
+    <img src="../assets/img/ecoach-login-after.png" alt="ECoach login after" style="width:100%">
+    <div class="img-des">New login flows for all levels of users</div>
 
     <hr>
-    <!-- <img src="../assets/img/ecoach-login-superusers.png" alt="ECoach login flow before and after" style="width:100%">
-    <div class="img-des">ECoach Superuser login flow before and after</div>
-    <img src="../assets/img/ecoach-login-dchange.png" alt="ECoach login design change" style="width:100%">
-    <div class="img-des">ECoach login design change</div>
-    <img src="../assets/img/ecoach-login-new-flow.png" alt="ECoach new login flow" style="width:100%">
-    <div class="img-des">ECoach new login flow</div> -->
     
 <!-- 3-2 challenge 2-->
     <h1 id="ecoach-title">Challenge 2: Redesigning characteristics and featured tags across all 4 tables</h1>
@@ -149,31 +153,42 @@
         <li>Previous “FEAT” and “CHAR” tags had the same styling that resembled a button, but was not clickable.</li>
         <li>The tags were not highlighted and thus it took users much effort to look for the “FEAT” and “CHAR” tags in the table.</li>
       </ul>
+      <img src="../assets/img/ecoach-tag-before.png" alt="ECoach tag before" style="width:90%">
+      <div class="img-des">Previous featured and characteristic tags</div>
 
     <h2>Ideation</h2>
       <p>To highlight and distinguish “FEAT” and “CHAR” tags, I created multiple icons, UI elements, and tried out multiple color pairs to find the match that conveys the right message and different levels of urgency. </p>
-
-    <h2>User tests & iterations</h2>
+      <img src="../assets/img/ecoach-tag-ideation.png" alt="ECoach tag ideation" style="width:90%">
+      <div class="img-des">Brainstorming icon solutions for tags</div>
+    
+      <h2>User tests & iterations</h2>
       <p>After creating several sets of icons and UI elements, I conducted a second-round interview with users to collect feedback on their preferences. Based on users’ input, I iterated on the UI designs.</p>
-
-    <h2>Design changes & decisions</h2>
+      <img src="../assets/img/ecoach-tag-iteration.png" alt="ECoach tag iteration" style="width:90%">
+      <div class="img-des">Hi-fi mockups for user testing</div>
+    
+      <h2>Design changes & decisions</h2>
       <p>After more rounds of explorations and discussions with my mentor, I decided to finally go with the design that uses the megaphone icon to highlight featured items, and color-coded bars to display wired/partially wired/unwired status. When users hover over each row, they would get more information about what characteristics are wired to MTS and what are not.</p>
 
       <h3>1. Created icon for “FEAT” tag and icon + color-coded bars for “CHAR” tag</h3>
         <p>Implementing entirely different solutions for “FEAT” and “CHAR” tags aimed to help users better distinguish the tags.</p>
+        <img src="../assets/img/ecoach-tag-change-1.png" alt="ECoach tag change 1" style="width:90%">
+        <div class="img-des">Different solutions for “FEAT” and “CHAR” tags</div>
+      
       <h3>2. Chose salmon red, orange, and seafoam-dark green to show different wired state</h3>
         <p>Using different colors to display status allows users to tell if an item is wired, partially wired, or unwired to MTS characteristics. I tried out multiple color solutions and chose the one that has the highest color contrast instead of the one that is most visually appealing in terms of aesthetics.</p>
+        <img src="../assets/img/ecoach-tag-change-2.png" alt="ECoach tag change 2" style="width:90%">
+        <div class="img-des">Color code iterations</div>
+      
       <h3>3. Added hover state with color-coded icons for “CHAR” tags </h3>
         <p>Previously, there weren’t hover states for “CHAR” tags. Thus, to find out what characteristics are wired and what are not, users have to take additional steps to confirm the details. Now, with hover states, users can clearly see a status summary without visiting the item details page.</p>
+        <img src="../assets/img/ecoach-tag-change-3.png" alt="ECoach tag change 3" style="width:90%">
+        <div class="img-des">Hover states for “CHAR” tags</div>
 
     <h2>Final design</h2>
       <p>The final design was approved by users we interviewed and was carried on to the process of development.</p>
-    
+      <img src="../assets/img/ecoach-tag-after.png" alt="ECoach tag after" style="width:90%">
+      <div class="img-des">Hi-fi mockups showing how the redesign looks with all 4 tables across the site</div>
       <hr>
-      <!-- <img src="../assets/img/ecoach-tag-before.png" alt="ECoach tags before" style="width:100%">
-    <div class="img-des">ECoach tags (before)</div>
-    <img src="../assets/img/ecoach-tags-after.png" alt="ECoach tags after" style="width:100%">
-    <div class="img-des">ECoach tags (after)</div> -->
 
 <!-- 3-3 challenge 3-->
 <h1 id="ecoach-title">Challenge 3: Creating fun empty state of coaches that connects to brand identity</h1>
@@ -184,28 +199,26 @@
 
     <h2>Problem</h2>
       <p>Previous empty state of coaches was text-based, telling users that we are sorry for they are not in any coaches at the moment. This conveyed the right information, but was not ideal. The word “sorry” carries multiple meanings and could be misinterpreted. Visually, the message was straightforward but wasn’t connected to the brand identity.</p>
-
+      <img src="../assets/img/ecoach-empty-before.png" alt="ECoach empty before" style="width:50%">
+      <div class="img-des">Previous empty state of coaches</div>
+    
     <h2>Ideation & interactions</h2>
       <p>I collected UI pieces that related to the ECoach brand and recreated those to better match with the idea – “Empty state of coaches”.</p>
       <p>Aside from recreating illustrations, I also redesigned the overall layout and adjusted the copy to make the message stand out more to student users.</p>
-
+      <img src="../assets/img/ecoach-empty-iteration.png" alt="ECoach tag iterations" style="width:90%">
+      <div class="img-des">Iterations for empty state of coaches</div>
+    
     <h2>Final design</h2>
       <p>My two mentors and I voted on our favorites of the redesigns. The one with a Sweatpants Guy on the bottom-left corner of a simplified coach card was on the top of our picks. To ensure the copy “No data found” stands out to student users, I used one of the dark colors in our style guide – teal-darkest for our title copy. </p>
-
-    <!-- <img src="../assets/img/ecoach-empty-before.png" alt="ECoach empty state (before)" style="width:68%">
-    <div class="img-des">ECoach empty state (before)</div>
-    <img src="../assets/img/ecoach-empty-after.png" alt="ECoach empty state (after)" style="width:100%">
-    <div class="img-des">ECoach empty state (after)</div>
-    <img src="../assets/img/ecoach-empty-iteration.png" alt="ECoach empty iterations" style="width:100%">
-    <div class="img-des">ECoach empty state iterations</div> -->
-    
+      <img src="../assets/img/ecoach-empty-after.png" alt="ECoach tag after" style="width:90%">
+      <div class="img-des">Redesigned empty state for coaches</div>
     <hr>
   </div>
 
   <!-- 9. conclusion and future notes -->
   <div class="section">
     <h4>reflection</h4>
-    <h1 id="ecoach-title">Before I forget about this adventure...</h1>
+    <h1 id="ecoach-title">What I learned</h1>
     <p>ECoach is a massive system having five permission levels and various tailoring methods. I started off the tasks underestimating efforts needed before I could even begin to brainstorm, ideate, and design. There were times when I felt like one of the blind men with the elephant. I thought I understood what a great login experience should look like, but I failed to consider all levels of permission. I assumed it would be a simple solution to apply two new icons to replace the feature tag and characteristic tag, but overlooked how complicated the tables were already. Thanks to my mentor, Kristen’s guidance, I was able to get a thorough understanding of how the complex system works. And that helped me make better design decisions.
     </p>
   </div>
