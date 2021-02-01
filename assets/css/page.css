@@ -167,11 +167,20 @@ hr {
   align-items: center;
   min-width: 160px;
   border-radius: 6px;
-  background-color: rgba(160, 217, 218, 0.5);
+  /* background-color: rgba(160, 217, 218, 0.5); */
   width: 33%;
   margin-right: 10px;
   padding: 10px;
 }
+
+#ecoach-card-bg {
+  background-color: rgba(160, 217, 218, 0.5);
+}
+
+#spire-card-bg {
+  background-color: #e7f5fd;
+}
+
 .block-container {
   display: inline-block;
   position: relative;
