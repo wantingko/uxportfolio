@@ -51,12 +51,19 @@ p{
     line-height: 1.8;
 }
 
+
 .img-des {
   font-size: 15px;
   padding: 3px;
-  margin-bottom: 5px;
+  margin: 5px 0;
   color: #c0ccd4;
   text-align: center;
+  line-height: 1.5;
+}
+
+a{
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 hr {
@@ -223,6 +230,10 @@ hr {
     text-align: center;
   }
   .landing-text > h2 {
+    text-align: center;
+  }
+
+  .landing-text > p {
     text-align: center;
   }
 
