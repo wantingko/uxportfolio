@@ -125,6 +125,12 @@ img{
     border-radius: 6px;
 }
 
+.hero-image > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* skip */
 *:focus{
     border: 2px solid blcak;
@@ -268,21 +274,6 @@ footer {
 /*remember to edit footer elements*/
 
 /*all projects starts here*/
-.hero-image {
-  /* background-color: #eaf2f3; */
-  /* height: 500px; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-/*.img-gif > img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 300px;
-}*/
 
 .section{
   padding: 10px 5%;
@@ -366,7 +357,9 @@ footer {
         font-weight: 400;
         margin: 10px;
     }
-
+    .hero-image {
+        padding-bottom: 60px;
+    }
     .project-content {
         display: grid;
         grid-gap: 20px;
