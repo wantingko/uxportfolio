@@ -36,6 +36,14 @@ h4 {
   text-transform: uppercase;
 }
 
+#mitigate-needs-title {
+  color: rgba(29, 201, 183, 0.5)
+}
+
+#mitigate-usability-title {
+  color: rgba(255, 184, 34, 0.5)
+}
+
 .content-tag {
   color: #c0ccd4;
   font-size: 19px;
@@ -95,6 +103,10 @@ hr {
   color: #0e0e51
 }
 
+#mitigate-title {
+  color: #2b2f33
+}
+
 .landing-text > h2 {
   font-size: 20px;
   font-weight: 400;
@@ -128,6 +140,10 @@ hr {
 
 #change {
   background-color: rgba(38, 51, 109, 0.05);
+}
+
+#mitigate {
+  background-color: rgba(43, 47, 51, 0.05);
 }
 
 .landing-text {
@@ -183,6 +199,21 @@ hr {
   padding: 10px;
 }
 
+.proj-content-card-2-col {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 160px;
+  border-radius: 6px;
+  /* background-color: rgba(160, 217, 218, 0.5); */
+  width: 55%;
+  margin-right: 10px;
+  padding: 10px;
+}
+
 #change-card-bg {
   background-color: rgba(38, 51, 109, 0.1);
 }
@@ -192,6 +223,10 @@ hr {
 
 #spire-card-bg {
   background-color: #e7f5fd;
+}
+
+#mitigate-card-bg {
+  background-color: rgba(43, 47, 51, 0.05);
 }
 
 .block-container {
@@ -294,6 +329,10 @@ hr {
     justify-content: center;
   }
   .proj-content-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .proj-content-card-2-col {
     width: 100%;
     margin-bottom: 20px;
   }
