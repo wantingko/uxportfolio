@@ -87,9 +87,8 @@ header{
 
 /* navbar */
 nav{
-    /*position: fixed;*/
     padding: 20px;
-    text-align: center;
+    text-align: right;
     background-color: #fff8cd;
 }
 
@@ -303,27 +302,13 @@ footer {
 }
 
 .flex-container > div {
-  /*background-color: #f1f1f1;*/
-  /*flex: 0 0 50%;*/
-  /* max-width: 50%; */
-  /* max-width: 450px; */
-  /*margin: 0px 0px;*/
   padding: 10px 10px 10px 0;
-  /*font-size: 1em;*/
-  /*color: white;*/
 }
-
-/*change project*/
-/*syncgrading project*/
-/*maize and blue project*/
-/*music database project*/
-
-/*---------------------------------------------------*/
 
 /*media queries*/
 /* media query for laptops and desktops*/
 /* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
-@media all and (min-width: 1025px){
+/* @media all and (min-width: 1025px){
     nav{
         text-align: right;
     }
@@ -333,7 +318,7 @@ footer {
     .projects{
         padding: 4em;
     }
-}
+} */
 
 /* media query for tablets and ipads - portrait*/
 /* reference: https://gist.github.com/gokulkrishh/242e68d1ee94ad05f488 */
@@ -387,6 +372,9 @@ footer {
   @media (min-width: 670px) and (max-width: 1024px) {
     header {
         height: 30%;
+    }
+    nav{
+        text-align: center;
     }
     .header-edu {
         padding: 5px 5px 15px 5px;
