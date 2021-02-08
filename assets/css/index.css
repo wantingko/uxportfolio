@@ -248,12 +248,14 @@ img{
 .project-tag{
     font-size: 13px;
     padding: 3px 8px;
-    background: #E3EAFF;
+    background: rgba(56, 82, 102, 0.07);
+    /* background: #E3EAFF; */
     border-radius: 3px;
     margin-right: 5px;
     margin-top: .5em;
     margin-bottom: .5em;
-    color: #2E3658;
+    color: #385266;
+    /* color: #2E3658; */
 }
 
 /*remember to edit this part*/
